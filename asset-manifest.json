@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/NGO-web/static/css/main.62b7edeb.chunk.css",
+    "main.js": "/NGO-web/static/js/main.bc822b0a.chunk.js",
+    "main.js.map": "/NGO-web/static/js/main.bc822b0a.chunk.js.map",
+    "runtime-main.js": "/NGO-web/static/js/runtime-main.9e9af643.js",
+    "runtime-main.js.map": "/NGO-web/static/js/runtime-main.9e9af643.js.map",
+    "static/css/2.383c0125.chunk.css": "/NGO-web/static/css/2.383c0125.chunk.css",
+    "static/js/2.9474a597.chunk.js": "/NGO-web/static/js/2.9474a597.chunk.js",
+    "static/js/2.9474a597.chunk.js.map": "/NGO-web/static/js/2.9474a597.chunk.js.map",
+    "static/js/3.c2298d9e.chunk.js": "/NGO-web/static/js/3.c2298d9e.chunk.js",
+    "static/js/3.c2298d9e.chunk.js.map": "/NGO-web/static/js/3.c2298d9e.chunk.js.map",
+    "index.html": "/NGO-web/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/NGO-web/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.62b7edeb.chunk.css.map": "/NGO-web/static/css/main.62b7edeb.chunk.css.map",
+    "static/js/2.9474a597.chunk.js.LICENSE.txt": "/NGO-web/static/js/2.9474a597.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/NGO-web/static/media/footer-background-image.a6180b69.jpg",
+    "static/media/logo.98299f78.png": "/NGO-web/static/media/logo.98299f78.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e9af643.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.9474a597.chunk.js",
+    "static/css/main.62b7edeb.chunk.css",
+    "static/js/main.bc822b0a.chunk.js"
+  ]
+}
