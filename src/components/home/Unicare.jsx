@@ -52,7 +52,7 @@ const Unicare = () => {
                 </Row>
             </Container>
         </div>
-        <UnicareCards/>
+        
         </>
     )
 }

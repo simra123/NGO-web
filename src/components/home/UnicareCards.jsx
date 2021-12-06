@@ -7,7 +7,7 @@ import {MdPeopleAlt} from 'react-icons/md'
 
 const UnicareCards = () => {
     return(
-        <div className="unicard">
+        <div className="unicard mb-5">
             <Row>
                 <Col lg="3" md="3" xs="12" className="each-card p-0 m-0">
                     <div className="content bg-danger ">
