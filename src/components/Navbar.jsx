@@ -14,7 +14,7 @@ const Menu = () => {
         {name : 'About' , link : '/about'},
         {name : 'Causes' , link : '/causes'},
         {name : 'Activity' , link : '/activity'},
-        {name : 'News and Stories' , link : '/story'},
+        {name : 'News and Stories' , link : '/news'},
         {name : 'Contact Us' , link : '/contact'},
     ]
     return(
@@ -57,7 +57,7 @@ const Menu = () => {
                         NavLinks.map((value, index) => {
                             return(
 
-                               <NavLink  className="nav-link" to={value.link}> {value.name} </NavLink>
+                               <NavLink  exact className="nav-link" to={value.link}> {value.name} </NavLink>
                                 
                             )
                         })

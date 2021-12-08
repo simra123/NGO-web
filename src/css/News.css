@@ -1,0 +1,65 @@
+.recent-news{
+    margin: 4rem 2rem;
+}
+.recent-news h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.recent-news h3::after{
+    content: '';
+    width: 10%;
+    height: 3px;
+    display: block;
+    background-color: var(--main-color);
+    margin-top: 10px;
+    margin-left: 45%;
+}
+.recent-news p{
+    text-align: center;
+    margin: 20px 0px;
+}
+.recent-news .all-news {
+    margin: 3rem 0px;
+}
+.recent-news .all-news .each-news .content {
+    padding: 20px;
+    border: 0.4px solid rgba(167, 164, 164, 0.363);
+    border-top: transparent;
+}
+.recent-news .all-news .each-news .content h6{
+    font-weight: 700
+}
+.recent-news .all-news .each-news .content p{
+    text-align: left !important;
+    font-size: 14px;
+}
+.recent-news .all-news .each-news .content button{
+    border-radius: 50px;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.recent-news .all-news .each-news .content  span{
+    color: var(--main-color);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.popular-post {
+    margin: 11rem 1rem;
+}
+.popular-post h6 {
+    margin-bottom: 2rem;
+}
+.popular-post p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.733);
+}
+.popular-post small {
+    color: var(--main-color);
+    font-size: 12px;
+    margin-left: 10px;
+}

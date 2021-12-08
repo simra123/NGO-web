@@ -1,0 +1,55 @@
+.become-volunteer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.become-volunteer h1{
+    margin: 20px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+
+}
+.become-volunteer p{
+    text-align: center;
+    padding: 0px 4rem;
+    color: black;
+}
+
+.become-volunteer button{
+    background-color: var(--main-color);
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.become-volunteer .each{
+    text-align: center;
+}
+
+.each  {
+    margin-top: 3rem;
+}
+.each span  {
+    background-color: var(--secondary-color);
+    padding: 15px 12px;
+    border-radius: 50%;
+    position: relative;
+}
+ .each  h2  {
+    color: var(--main-color);
+    font-weight: 700;
+}
+.volunteer-image {
+    margin: 20px 0px ;
+    margin-bottom: 6rem;
+
+}
+.volunteer-image .each-img {
+    margin: 15px;
+}

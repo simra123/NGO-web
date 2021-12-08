@@ -28,6 +28,7 @@
     font-weight: 600;
     margin-left: 10px;
     padding: 10px 18px  !important;
+    border-radius: 50px !important;
 }
  nav {
     top: 0;
@@ -50,6 +51,7 @@ nav .navbar-nav  button{
     background-color: var(--main-color);
     color: white;
     margin-left: 4px;
+    border-radius: 50px !important;
  
 }
 .slider-banner{
@@ -91,6 +93,7 @@ nav .navbar-nav  button{
     background-color: var(--main-color);
     color: white;
     margin-top: 10px;
+    border-radius: 50px !important;
 
  
 }
@@ -122,6 +125,7 @@ nav .navbar-nav  button{
     font-size: 13px;
     font-weight: 600;
     margin-top: 25px;
+    border-radius: 50px !important;
 }
 .unicare .content button:hover{
     color: white;
@@ -190,7 +194,7 @@ nav .navbar-nav  button{
     border-radius: 0px 0px 70px 70px;
 }
 .support-us {
-    margin-top: 14rem;
+    margin-top: 9rem;
     margin-bottom: 3rem;
 }
 .support-us h5{
@@ -312,6 +316,7 @@ footer .footer .newsletter button{
     background-color: var(--main-color);
     width: 40%;
     color: white;
+    border-radius: 50px !important;
 }
 .footer-widget {
    color: white;
