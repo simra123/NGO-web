@@ -7,16 +7,16 @@ import Banner from '../../components/TopBanner'
 import RecentNews from '../../components/news&story/RecentNews'
 import PopularPost from '../../components/news&story/PopularPost'
 import Pagination from '../../components/news&story/Pagination'
+import CauseDetails from '../../components/causes/CauseDetails'
 
-
-
-const News = () => {
+const Causes = () => {
     return(
         <>
         <Navbar/>
         <Banner/>
-        
-            <Row>
+         <CauseDetails/>
+         <Container><Pagination/></Container>
+            {/* <Row>
                 <Col md="9">
                     <RecentNews/>
                     <Pagination/>
@@ -24,9 +24,9 @@ const News = () => {
                 <Col md="3">
                     <PopularPost/>
                 </Col>
-            </Row>
+            </Row> */}
         <Footer/>
         </>
     )
 }
-export default News
+export default Causes

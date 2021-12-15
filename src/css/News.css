@@ -63,3 +63,22 @@
     font-size: 12px;
     margin-left: 10px;
 }
+.pagination-custom {
+    display: flex;
+    position: relative;
+    float: right;
+    list-style: none;
+    border: none;
+    margin-right: 2rem;
+
+}
+.pagination-custom li{
+    padding: 10px 18px;
+    border: 1px solid var(--main-color);
+    margin: 10px 3px;
+    cursor: pointer;
+}
+.pagination-custom li:hover{
+    background-color: var(--main-color);
+    color: white;
+}

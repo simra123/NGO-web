@@ -1,0 +1,49 @@
+.causes{
+    background-color: rgba(221, 210, 210, 0.322);
+    padding: 10px 30px;
+    margin: 20px 0px;
+    color: #0009;
+}
+.causes .each-cause{
+    margin: 30px 0px;
+}
+.causes .each-cause .content{
+    background-color: white;
+    padding: 10px 25px;
+}
+.causes .each-cause .content h3{
+    font-weight: 600;
+}
+.causes .each-cause .content p {
+    color: #0008;
+}
+.causes .each-cause .content .org{
+    color: var(--main-color);
+}
+.causes .each-cause .content button{
+    border-radius: 50px;
+    color: white;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    margin-top: 10px ;
+}
+.causes .each-cause .content .social-icons {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.causes .each-cause .content .social-icons span{
+    border: 1px solid #0008;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px 8px;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.causes .each-cause .content .social-icons span:hover{
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}
