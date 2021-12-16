@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/NGO-web/static/css/main.1b0e39e7.chunk.css",
-    "main.js": "/NGO-web/static/js/main.4337d158.chunk.js",
-    "main.js.map": "/NGO-web/static/js/main.4337d158.chunk.js.map",
-    "runtime-main.js": "/NGO-web/static/js/runtime-main.9e9af643.js",
-    "runtime-main.js.map": "/NGO-web/static/js/runtime-main.9e9af643.js.map",
+    "main.css": "/NGO-web/static/css/main.cb93b6ad.chunk.css",
+    "main.js": "/NGO-web/static/js/main.560153dd.chunk.js",
+    "main.js.map": "/NGO-web/static/js/main.560153dd.chunk.js.map",
+    "runtime-main.js": "/NGO-web/static/js/runtime-main.1e947b71.js",
+    "runtime-main.js.map": "/NGO-web/static/js/runtime-main.1e947b71.js.map",
     "static/css/2.383c0125.chunk.css": "/NGO-web/static/css/2.383c0125.chunk.css",
-    "static/js/2.9474a597.chunk.js": "/NGO-web/static/js/2.9474a597.chunk.js",
-    "static/js/2.9474a597.chunk.js.map": "/NGO-web/static/js/2.9474a597.chunk.js.map",
-    "static/js/3.c2298d9e.chunk.js": "/NGO-web/static/js/3.c2298d9e.chunk.js",
-    "static/js/3.c2298d9e.chunk.js.map": "/NGO-web/static/js/3.c2298d9e.chunk.js.map",
+    "static/js/2.700a5575.chunk.js": "/NGO-web/static/js/2.700a5575.chunk.js",
+    "static/js/2.700a5575.chunk.js.map": "/NGO-web/static/js/2.700a5575.chunk.js.map",
+    "static/js/3.147c00d1.chunk.js": "/NGO-web/static/js/3.147c00d1.chunk.js",
+    "static/js/3.147c00d1.chunk.js.map": "/NGO-web/static/js/3.147c00d1.chunk.js.map",
     "index.html": "/NGO-web/index.html",
     "static/css/2.383c0125.chunk.css.map": "/NGO-web/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.1b0e39e7.chunk.css.map": "/NGO-web/static/css/main.1b0e39e7.chunk.css.map",
-    "static/js/2.9474a597.chunk.js.LICENSE.txt": "/NGO-web/static/js/2.9474a597.chunk.js.LICENSE.txt",
+    "static/css/main.cb93b6ad.chunk.css.map": "/NGO-web/static/css/main.cb93b6ad.chunk.css.map",
+    "static/js/2.700a5575.chunk.js.LICENSE.txt": "/NGO-web/static/js/2.700a5575.chunk.js.LICENSE.txt",
+    "static/media/Causes.css": "/NGO-web/static/media/causesbg.31625a3e.jpg",
     "static/media/Home.css": "/NGO-web/static/media/footer-background-image.a6180b69.jpg",
-    "static/media/logo.98299f78.png": "/NGO-web/static/media/logo.98299f78.png"
+    "static/media/logo.98299f78.png": "/NGO-web/static/media/logo.98299f78.png",
+    "static/media/user.5fe599b7.jpg": "/NGO-web/static/media/user.5fe599b7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e9af643.js",
+    "static/js/runtime-main.1e947b71.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.9474a597.chunk.js",
-    "static/css/main.1b0e39e7.chunk.css",
-    "static/js/main.4337d158.chunk.js"
+    "static/js/2.700a5575.chunk.js",
+    "static/css/main.cb93b6ad.chunk.css",
+    "static/js/main.560153dd.chunk.js"
   ]
 }
