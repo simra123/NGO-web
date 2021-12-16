@@ -4,29 +4,28 @@ import {Container, Row, Col} from 'react-bootstrap'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import Banner from '../../components/TopBanner'
-import DonationBanner from '../../components/causes/DonationBanner'
+import NewsStory from '../../components/news&story/NewsStory'
+import PopularPost from '../../components/news&story/PopularPost'
 import Pagination from '../../components/news&story/Pagination'
-import CauseDetails from '../../components/causes/CauseDetails'
 
-const Causes = () => {
+
+
+const News = () => {
     return(
         <>
         <Navbar/>
         <Banner/>
-         <CauseDetails/>
-         <Container><Pagination/></Container>
-         <DonationBanner/>
-            {/* <Row>
+        
+            <Row>
                 <Col md="9">
-                    <RecentNews/>
-                    <Pagination/>
+                    <NewsStory/>
                 </Col>
                 <Col md="3">
                     <PopularPost/>
                 </Col>
-            </Row> */}
+            </Row>
         <Footer/>
         </>
     )
 }
-export default Causes
+export default News

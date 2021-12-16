@@ -46,7 +46,7 @@
 }
 
 .popular-post {
-    margin: 11rem 1rem;
+    margin: 9rem 1rem;
 }
 .popular-post h6 {
     margin-bottom: 2rem;
@@ -81,4 +81,66 @@
 .pagination-custom li:hover{
     background-color: var(--main-color);
     color: white;
+}
+
+.story {
+    padding: 2rem 3rem;
+}
+.story .userby{
+    display: flex;
+    margin-top: -20px;
+    
+}
+.story .userby span{
+    font-size: 15px;
+    margin: 0px 8px;
+    color: #000100bb;
+}
+.story .userby svg{
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+.story .userby img{
+    border-radius: 50%;
+    margin-top: -3%;
+    border: white 3px solid;
+}
+.story .image{
+    margin: 2rem 0px;
+}
+.story .content{
+    padding: 0px 2rem;
+}
+.story .content h4{
+    margin-bottom: 20px;
+}
+.story .content p{
+    font-size: 18px;
+    line-height: 2.1rem;
+    color: #0009;
+}
+.story .social-icons{
+    margin: 1rem 3rem;
+    text-transform: uppercase;
+}
+.story .social-icons span{
+    padding: 10px 16px;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+}
+.story .social-icons span:hover{
+    filter:drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.418));
+}
+.story .social-icons .fb{
+    background-color: rgb(31, 44, 163);
+}
+.story .social-icons .twitter{
+    background-color: rgb(63, 174, 218);
+}
+.story .social-icons .linkedin{
+    background-color: gray;
+}
+.story .social-icons .google{
+    background-color: red;
 }

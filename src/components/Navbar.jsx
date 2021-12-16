@@ -14,7 +14,8 @@ const Menu = () => {
         {name : 'About' , link : '/about'},
         {name : 'Causes' , link : '/causes'},
         {name : 'Activity' , link : '/activity'},
-        {name : 'News and Stories' , link : '/news'},
+        {name : 'News' , link : '/news'},
+        {name : 'News and Stories' , link : '/news-stories'},
         {name : 'Contact Us' , link : '/contact'},
     ]
     return(
