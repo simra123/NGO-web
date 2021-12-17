@@ -183,18 +183,20 @@ nav .navbar-nav  button{
 .unicard .each-card img {
     position: absolute;
     z-index: -1;
-    top: 71%;
+    top: 90%;
     border-left: 1px solid rgba(201, 189, 189, 0.452);
+    margin-bottom: 15rem !important;
+
     
 }
 .unicard .each-card .content {
     height: 350px;
     text-align: center;
     padding: 0px 50px;
-    border-radius: 0px 0px 70px 70px;
+    border-radius: 0px 0px 30px 30px;
 }
 .support-us {
-    margin-top: 9rem;
+    margin-top: 13rem;
     margin-bottom: 3rem;
 }
 .support-us h5{
@@ -325,22 +327,25 @@ footer .footer .newsletter button{
    background-color: var(--main-color);
 }
 .top-banner{
-    background-image: url('https://wallpaperaccess.com/full/359168.jpg');
+    background-image: url('../assets//page-banner.jpg');
+    background-position: center top;
+    background-size: cover;
     height: 350px;
     display: flex;
+    text-align: right1;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
     flex-direction: column;
 }
 .top-banner h1 {
     padding: 0px 300px;
     z-index: 2;
-    font-weight: 800;
+    font-weight: 700;
     color: black
 
 }
 .top-banner::before{
-    background: rgba(211, 204, 204, 0.534);
+    background: rgba(236, 231, 230, 0.425);
     content: "";
     position: absolute;
     top: 18%;

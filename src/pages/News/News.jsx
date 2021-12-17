@@ -19,7 +19,7 @@ const News = () => {
             <Row>
                 <Col md="9">
                     <RecentNews/>
-                    <Pagination/>
+                    <Pagination  align="end"/>
                 </Col>
                 <Col md="3">
                     <PopularPost/>

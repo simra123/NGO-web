@@ -1,7 +1,11 @@
 import React from 'react'
 import { Button, Row, Col, Container } from 'react-bootstrap'
-import Image from '../../assets/image2.jpg'
+import Volunteer1 from '../../assets/volunteer1.jpg'
+import Volunteer2 from '../../assets/volunteer2.jpg'
+import Volunteer3 from '../../assets/volunteer3.jpg'
+import Volunteer4 from '../../assets/volunteer4.jpeg'
 import { FaPhone } from 'react-icons/fa'
+
 
 const Volunteers = () => {
     return(
@@ -36,19 +40,19 @@ const Volunteers = () => {
             <div className="volunteer-image">
                <Row  className="justify-content-center">
                    <Col className="each-img"  xs="6" md="4" lg="2">
-                       <img src={Image}  height="200" width="200" alt="" />
+                       <img src={Volunteer1}  height="200" width="200" alt="" />
                    </Col>
                    <Col className="each-img"  xs="6" md="4" lg="2">
-                       <img src={Image} alt="" height="200" width="200"  />
+                       <img src={Volunteer2} alt="" height="200" width="200"  />
                    </Col>
                    <Col className="each-img"  xs="6" md="4" lg="2">
-                       <img src={Image} alt="" height="200" width="200"  />
+                       <img src={Volunteer1} alt="" height="200" width="200"  />
                    </Col>
                    <Col className="each-img"  xs="6" md="4" lg="2">
-                       <img src={Image} alt="" height="200" width="200"  />
+                       <img src={Volunteer4} alt="" height="200" width="200"  />
                    </Col>
                    <Col className="each-img"  xs="6" md="4" lg="2">
-                       <img src={Image} alt="" height="200" width="200"  />
+                       <img src={Volunteer3} alt="" height="200" width="200"  />
                    </Col>
                </Row>
             </div>

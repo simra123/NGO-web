@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col, Button } from 'react-bootstrap'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG, FaRegCalendarAlt } from 'react-icons/fa'
-import BasicImage from '../../assets/image2.jpg'
+import News from '../../assets/news.jpg'
 import User from '../../assets/user.jpg'
 
 const NewsStory = () => {
@@ -9,7 +9,7 @@ const NewsStory = () => {
         <div className="story">
             <Row>
                 <Col xs='12' >
-                    <img  className="image" src={BasicImage} alt="" width="100%" height={400} />
+                    <img  className="image" src={News} alt="" width="100%" height={400} />
                     <div className="userby">
                         <img src={User} height={55} width={55} alt="" />
                         <span>By Genelia</span>

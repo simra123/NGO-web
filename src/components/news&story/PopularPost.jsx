@@ -1,32 +1,36 @@
 import React from 'react';
 import {Row , Col  , Button} from 'react-bootstrap';
-import BasicImage from '../../assets/image2.jpg';
+import Image1 from '../../assets/slider1.jpg';
+import Image2 from '../../assets/activity.jpg';
+import Image3 from '../../assets/about bg.jpg';
+import Image4 from '../../assets/causes.jpg';
+import Image5 from '../../assets/page-banner.jpg';
 
 const allPosts = [
     {
-        image : BasicImage,
+        image : Image5,
         text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
         date : '17 june 2020'
 
 
     },
     {
-        image : BasicImage,
+        image : Image1,
         text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
         date : '17 june 2020'
     },
     {
-        image : BasicImage,
+        image : Image2,
         text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
         date : '17 june 2020'
     },
     {
-        image : BasicImage,
+        image : Image3,
         text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
         date : '17 june 2020'
     },
     {
-        image : BasicImage,
+        image : Image4,
         text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
         date : '17 june 2020'
     },

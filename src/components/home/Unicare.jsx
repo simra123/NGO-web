@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button , Row , Col , Container  } from 'react-bootstrap';
-import BasicImage from '../../assets/image2.jpg';
+import About from '../../assets/about bg.jpg';
 import {FaPiggyBank} from 'react-icons/fa';
 import {MdPeopleAlt} from 'react-icons/md';
 import UnicareCards from './UnicareCards';
@@ -47,7 +47,7 @@ const Unicare = () => {
                         </Row>
                     </Col>
                     <Col xs="12" md="6">
-                        <img src={BasicImage} alt=""  height="500" width="500"/>
+                        <img src={About} alt=""  height="500" width="500"/>
                     </Col>
                 </Row>
             </Container>

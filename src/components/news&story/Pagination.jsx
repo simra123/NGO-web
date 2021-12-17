@@ -1,17 +1,15 @@
 import React from 'react';
 
-const Pagination = () => {
+const Pagination = (props) => {
     let pageNumbers = [];
   
     
     for(let i= 1; i <= 5; i++){
         pageNumbers.push(i)
     }
-
-  
     
     return(
-        <nav className="pagination-custom" aria-label="Pagination">
+        <nav style={{justifyContent:props.align}} className="pagination-custom" aria-label="Pagination">
             <li className="">
                 <span className="sr-only ">Prev</span>
             </li>

@@ -14,7 +14,7 @@ const Causes = () => {
         <Navbar/>
         <Banner/>
          <CauseDetails/>
-         <Container><Pagination/></Container>
+         <Container><Pagination  align="end"/></Container>
          <DonationBanner/>
             {/* <Row>
                 <Col md="9">

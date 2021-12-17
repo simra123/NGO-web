@@ -1,8 +1,11 @@
 import React from 'react';
 import {Row , Col } from 'react-bootstrap';
-import BasicImage from '../../assets/image2.jpg';
 import {FaPiggyBank , FaGift , FaPrayingHands } from 'react-icons/fa';
 import {MdPeopleAlt} from 'react-icons/md'
+import Image2 from '../../assets/activity.jpg';
+import Image3 from '../../assets/about bg.jpg';
+import Image4 from '../../assets/causes.jpg';
+import Image5 from '../../assets/page-banner.jpg';
 
 
 const UnicareCards = () => {
@@ -17,7 +20,7 @@ const UnicareCards = () => {
                             <MdPeopleAlt size={40}/>
                         </span>
                     </div>
-                    <img src={BasicImage} className="" alt=""  width="100%" height="200"/>
+                    <img src={Image2} className="" alt=""  width="100%" height="200"/>
                 </Col>
                 <Col lg="3" md="3" xs="12" className=" each-card p-0 m-0">
                     <div className="content bg-info">
@@ -27,7 +30,7 @@ const UnicareCards = () => {
                             <FaPiggyBank size={40}/>
                         </span>
                     </div>
-                    <img src={BasicImage} className="" alt=""  width="100%" height="200"/>
+                    <img src={Image3} className="" alt=""  width="100%" height="200"/>
                 </Col>
                 <Col lg="3" md="3" xs="12" className="each-card p-0 m-0">
                     <div className="content  bg-warning ">
@@ -37,7 +40,7 @@ const UnicareCards = () => {
                             <FaGift size={40}/>
                         </span>
                     </div>
-                    <img src={BasicImage} className="" alt=""  width="100%" height="200"/>
+                    <img src={Image4} className="" alt=""  width="100%" height="200"/>
                 </Col>
                 <Col lg="3" md="3" xs="12" className=" each-card p-0 m-0">
                     <div className="content  bg-success">
@@ -47,7 +50,7 @@ const UnicareCards = () => {
                             <FaPrayingHands size={40}/>
                         </span>
                     </div>
-                    <img src={BasicImage} className="" alt=""  width="100%" height="200"/>
+                    <img src={Image5} className="" alt=""  width="100%" height="200"/>
                 </Col>
             </Row>
         </div>

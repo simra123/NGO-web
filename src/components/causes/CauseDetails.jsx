@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/Causes.css'
 import {Container, Row , Col  , Button} from 'react-bootstrap';
-import BasicImage from '../../assets/image2.jpg';
+import Causes from '../../assets/causes.jpg';
 import { FiFacebook , FiInstagram , FiTwitter} from "react-icons/fi";
 import {  FaLinkedinIn} from "react-icons/fa";
 
@@ -28,7 +28,7 @@ const CauseDetails = () =>{
                         return(
                             <Row className="each-cause">
                                 <Col xs="12" md="5" className="image p-0 ">
-                                    <img src={BasicImage} width="100%" height="100%"  alt="" />
+                                    <img src={Causes} width="100%" height="100%"  alt="" />
                                     <div className="range w-100">
                                      <input type="range" min="1" max="100"  className="form-range" id="myRange"/>
                                     </div>

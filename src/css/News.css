@@ -24,6 +24,7 @@
 }
 .recent-news .all-news .each-news .content {
     padding: 20px;
+    margin: 30px 0px;
     border: 0.4px solid rgba(167, 164, 164, 0.363);
     border-top: transparent;
 }
@@ -66,10 +67,9 @@
 .pagination-custom {
     display: flex;
     position: relative;
-    float: right;
     list-style: none;
     border: none;
-    margin-right: 2rem;
+    margin: 1rem 2rem;
 
 }
 .pagination-custom li{
