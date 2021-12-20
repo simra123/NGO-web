@@ -17,5 +17,8 @@ button{
   outline: none !important;
   box-shadow: none !important;
 }
-
+a{
+  list-style: none !important;
+  text-decoration: none !important;
+}
 

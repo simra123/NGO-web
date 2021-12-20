@@ -13,12 +13,12 @@ const Login = () => {
                     <Col md="6" className="login-fields">
                         <h3>Login</h3>
                         <p>Lorem ipsum dolor sit amet consectetur?</p>
-                        <Button variant="light" className="social-btn">
+                        {/* <Button variant="light" className="social-btn">
                             <span> <FaFacebook size={20} color="blue" /> </span> login with facebook
                         </Button>
                         <Button variant="light" className="social-btn mb-3">
                             <span> <FaGoogle size={18}  color="red" /> </span> login with google
-                        </Button>
+                        </Button> */}
                         <hr  className='mb-4'/>
                        
                         <Form>
