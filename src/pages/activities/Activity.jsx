@@ -8,7 +8,7 @@ import Pagination from '../../components/news&story/Pagination'
 import ActivityCard from '../../components/activities/ActivityCard'
 import BannerBottom from '../../components/activities/BannerBottom'
 
-const News = () => {
+const Activity = () => {
     return(
         <>
         <Navbar/>
@@ -20,4 +20,4 @@ const News = () => {
         </>
     )
 }
-export default News
+export default Activity

@@ -3,7 +3,8 @@ import {Button , Row , Col , Navbar , Container , Nav } from 'react-bootstrap';
 import Logo from '../assets/logo.png'
 import {  FaLinkedinIn} from "react-icons/fa";
 import {FiPhoneCall  , FiMail ,  FiFacebook , FiInstagram , FiTwitter} from "react-icons/fi";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+
 
 const Menu = () => {
     const [showNav , setShowNav] = useState(false);   
@@ -63,7 +64,7 @@ const Menu = () => {
                         })
                     }
                       <Button className="btn  my-sm-0 " variant="light" >sponsar a child</Button>
-                      <Button className="btn  my-sm-0 " variant="light" >login</Button>
+                       <Link to="/login"> <Button className="btn  my-sm-0 " variant="light" >login</Button></Link>
                       <Button className="btn  my-sm-0 " variant="light" >sign up</Button>
                     </Nav>
                 </Navbar.Collapse>

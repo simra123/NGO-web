@@ -121,3 +121,70 @@
     z-index: 0;
     position: absolute;
 }
+
+.activity-details{
+    margin: 20px 30px;
+}
+.activity-details .image{
+    margin-left: 1rem;
+    background-color: white;
+    padding: 50px;
+}
+.activity-details .image .location{
+    background-color: var(--main-color);
+    padding:14px;
+    font-size: 16px;
+}
+.activity-details .image .location svg{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.activity-details  .date{
+    background-color: var(--secondary-color) !important;
+    padding:14px;
+    font-size: 16px;
+}
+.activity-details .image .date svg{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.activity-details h5{
+   margin: 10px 0px;
+}
+.activity-details .content p{
+    font-size: 16px;
+    line-height: 2.0rem;
+    letter-spacing: 0.2px;
+    color: #0009;
+}
+.activity-details .content .details-section{
+    padding: 20px;
+    color: white;
+}
+.activity-details .content .details-section svg{
+    margin-top: 10px;
+}
+.activity-details .content .details-section p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.activity-details .content .details-section .time{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin-right:0px
+}
+.activity-details .content .details-section .date2{
+    background-color: orange !important;
+    padding: 20px;
+    margin-right:0px
+
+}
+.activity-details .content .details-section .address{
+    background-color: var(--main-color);
+    padding: 20px;
+    margin-right:0px
+
+}

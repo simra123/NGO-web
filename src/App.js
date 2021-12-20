@@ -7,7 +7,9 @@ import AboutUS from './pages/about/AboutUS';
 import News from './pages/news/News';
 import NewsStory from './pages/news/NewsDetails';
 import Causes from './pages/causes/Causes';
-import Activity from './pages/activity/Activity';
+import Activity from './pages/activities/Activity';
+import ActivityDetails from './pages/activities/ActivityDetails';
+import Login from './pages/login/Login';
   
 function App() {
  // const Home = React.lazy(()=> import('./pages/Home/Home'))
@@ -22,6 +24,8 @@ function App() {
       <Route exact path="/news/details" component={NewsStory} />
       <Route exact path="/causes" component={Causes} />
       <Route exact path="/activity" component={Activity} />
+      <Route exact path="/activity/details" component={ActivityDetails} />
+      <Route exact path="/login" component={Login} />
     </Switch>  
 
   </HashRouter>
