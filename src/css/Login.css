@@ -34,13 +34,44 @@
     margin-bottom: 2px;
     margin-right: 5px;
 }
-.login-wrapper .login-card .login-fields  .custom-input{
-    border-radius: 50px;
+ .custom-input{
+    border-radius: 50px !important;
     outline: none !important;
     background-color: white;
     box-shadow: none !important;
 }
-.login-wrapper .login-card .login-fields  .custom-input:focus{
+.custom-input:focus{
     outline: none !important;
     border-color: var(--secondary-color);
+}
+.volunteer-wrapper{
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 20px;
+
+}
+.volunteer-wrapper .upper-sec h3{
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.volunteer-wrapper .upper-sec p{
+    font-size: 15px;
+    color: #0009;
+}    
+.volunteer-wrapper .volunteer-card {
+    background-color: rgba(219, 210, 210, 0.418);
+    padding: 30px 5rem;
+    margin: 10px;
+}
+.volunteer-wrapper .volunteer-card .signup-fields {
+    background-color: white;
+    padding: 30px 4rem;
+    box-shadow: 3px 2px 3px 5px rgba(190, 185, 185, 0.575) ;
+}
+
+.volunteer-wrapper .volunteer-card button {
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
 }

@@ -344,7 +344,7 @@ footer .footer .newsletter button{
     color: black
 
 }
-.top-banner::before{
+/* .top-banner::before{
     background: rgba(236, 231, 230, 0.425);
     content: "";
     position: absolute;
@@ -352,4 +352,4 @@ footer .footer .newsletter button{
     width: 100%;
     height: 70%;
     z-index: 1;
-}
+} */

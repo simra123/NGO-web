@@ -4,6 +4,7 @@ import {Container, Row , Col  , Button} from 'react-bootstrap';
 import Causes from '../../assets/causes.jpg';
 import { FiFacebook , FiInstagram , FiTwitter} from "react-icons/fi";
 import {  FaLinkedinIn} from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 const causes = [
     {
@@ -40,7 +41,7 @@ const CauseDetails = () =>{
                                     <p className='org mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quasi fuga quod.</p>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum rerum laudantium! Repudiandae deleniti inventore accusantium delectus tempora totam aspernatur animi sunt neque pariatur, perferendis ipsam dolorem natus repellendus blanditiis! Iure rerum sunt sint ut deserunt, rem illo magnam in facilis nisi eius, officia repellat blanditiis?</p>
 
-                                    <Button size="md">Donate Now</Button>
+                                   <Link to="/causes/details"><Button size="md">Donate Now</Button></Link> 
                                     <span className="float-end social-icons">
                                         help us by share
                                         <div className="d-flex">
