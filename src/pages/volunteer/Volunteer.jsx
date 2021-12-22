@@ -1,11 +1,14 @@
 import React from 'react'
-import '../../css/Login.css'
+import '../../css/Auth.css'
 import { Row, Col, Form, Button } from 'react-bootstrap'
 import Image from '../../assets/volunteerbg.png'
-import { Link } from 'react-router-dom'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
 const SignUp = () => {
     return(
+        <>
+        <Navbar/>
         <div className="volunteer-wrapper">
             <div className="upper-sec">
                 <Row className='justify-content-center'>
@@ -109,6 +112,8 @@ const SignUp = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 export default SignUp

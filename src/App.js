@@ -13,6 +13,9 @@ import ActivityDetails from './pages/activities/ActivityDetails';
 import Login from './pages/login/Login';
 import SignUp from './pages/signup/Signup';
 import BecomeAVolunteer from './pages/volunteer/Volunteer'
+import Dashboard from './pages/user-dashboard/Dashboard';
+import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy';
+import TermsConditions from './pages/terms-conditions/TermsConditions';
   
 function App() {
  // const Home = React.lazy(()=> import('./pages/Home/Home'))
@@ -32,6 +35,9 @@ function App() {
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/Volunteer" component={BecomeAVolunteer} />
+      <Route exact path="/dashboard" component={Dashboard} />
+      <Route exact path="/terms-conditions" component={TermsConditions} />
+      <Route exact path="/privacy-policy" component={PrivacyPolicy} />
     </Switch>  
 
   </HashRouter>

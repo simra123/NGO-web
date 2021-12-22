@@ -1,12 +1,16 @@
 import React from 'react'
-import '../../css/Login.css'
+import '../../css/Auth.css'
 import { Row, Col, Form, Button } from 'react-bootstrap'
 import { FaFacebook, FaGoogle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Image from '../../assets/causesbg.jpg'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 
 const SignUp = () => {
     return(
+        <>
+        <Navbar/>
         <div className="login-wrapper">
             <div className="login-card">
                 <Row>
@@ -54,6 +58,8 @@ const SignUp = () => {
                 </Row>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 export default SignUp

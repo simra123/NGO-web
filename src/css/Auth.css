@@ -75,3 +75,22 @@
     margin-top: 20px;
     margin-left: 20px;
 }
+
+.policy {
+    margin: 5rem 0px;
+}
+.policy h1 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.policy h5{
+    font-weight: 600;
+    margin: 3rem 0px;
+    color: var(--main-color);
+}
+.policy p{
+   color: rgba(0, 0, 0, 0.74);
+   font-weight: 500;
+   line-height: 2.7;
+}

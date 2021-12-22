@@ -1,0 +1,60 @@
+.user-tabs{
+    margin: 3rem;
+    background-color: rgba(190, 185, 185, 0.562);
+    padding: 19px 2rem;
+    border-radius: 4px;
+}
+
+.user-tabs .sidebar .user-details {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 1rem 0px;
+    border-radius: 6px 6px 0px 0px;
+    color: white;
+}
+.user-tabs .sidebar .user-details img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.user-tabs .sidebar .user-details p{
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.651);
+    margin: 0;
+    padding: 0;
+}
+.user-tabs .sidebar .tabs-links {
+    background-color: white;
+    padding: 10px;
+}
+.user-tabs .sidebar .tabs-links .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: rgb(245 51 9 / 30%) !important;
+    color: #0009 !important;
+}
+.user-tabs .sidebar .tabs-links .nav-pills .nav-link.active  svg {
+    color: var(--main-color) !important;
+}
+.user-tabs .sidebar .tabs-links .nav-link {
+   color: #0009;
+   padding: 13px 10px;
+}
+
+.user-tabs .sidebar .tabs-links .nav-link svg{
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.user-tabs .tab-content .tab-content>.active {
+    background-color: transparent;
+}
+.user-tabs  .tab-content .each-chart {
+    margin-right: 1px;
+    border-radius: 6px;
+    padding: 0;
+    border: 1px solid rgba(39, 37, 37, 0.068);
+}
+.user-tabs  .tab-content .each-chart .heading{
+    padding: 10px;
+}
+.user-tabs  .tab-content .each-chart .heading p{
+    margin: 0;
+}
