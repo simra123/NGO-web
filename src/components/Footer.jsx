@@ -7,7 +7,7 @@ import { FiFacebook , FiInstagram , FiTwitter} from "react-icons/fi";
 const Footer = () => {
     return(
         <>
-        <Map/>
+        {/* <Map/> */}
         <footer>
             <Container>
                 <Row className="footer">

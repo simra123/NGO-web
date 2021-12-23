@@ -5,18 +5,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const causes = [
-    {
-        image : Mic
-    },
-    {
-        image : Mic
-    },
-    {
-        image : Mic
-    },
-    {
-        image : Mic
-    }
+  {
+      image : Mic
+  },
+  {
+      image : Mic
+  },
+  {
+      image : Mic
+  },
+  {
+      image : Mic
+  }
 ]
 
 const CauseSlider = (props) => {

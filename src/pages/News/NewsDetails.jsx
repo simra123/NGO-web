@@ -15,15 +15,16 @@ const News = () => {
         <>
         <Navbar/>
         <Banner/>
-        
+        <Container>
             <Row>
-                <Col md="9">
+                <Col lg="9" md="8">
                     <NewsStory/>
                 </Col>
-                <Col md="3">
+                <Col lg="3" md="4">
                     <PopularPost/>
                 </Col>
             </Row>
+        </Container>
         <Footer/>
         </>
     )

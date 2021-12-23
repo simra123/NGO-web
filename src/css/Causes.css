@@ -151,7 +151,7 @@ input[type='range']::-webkit-slider-runnable-track {
 } */
 .causes-details .content{
     padding: 0px 2rem;
-    margin-top: 9rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 .causes-details .content h4{
@@ -244,4 +244,18 @@ input[type='range']::-webkit-slider-runnable-track {
     padding: 20px;
     text-align: center;
 
+}
+.causes-gallery{
+    position: relative;
+}
+.causes-gallery .causes-gallery-icons{
+    position: absolute;
+    right: 11%;
+    top:2%;
+}
+.causes-gallery .causes-gallery-icons span{
+   background-color: rgba(255, 255, 255, 0.185);
+   padding: 10px;
+   color: var(--main-color);
+   cursor: pointer;
 }

@@ -63,7 +63,7 @@ const Menu = () => {
                             )
                         })
                     }
-                       <Button className="btn  my-sm-0 " variant="light" >sponsar a child</Button>
+                      <Link to="/volunteer"> <Button className="btn  my-sm-0 " variant="light" >sponsar a child</Button></Link>
                        <Link to="/login"> <Button className="btn  my-sm-0 " variant="light" >login</Button></Link>
                        <Link to="/signup"><Button className="btn  my-sm-0 " variant="light" >sign up</Button></Link>
                     </Nav>

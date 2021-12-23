@@ -188,3 +188,17 @@
     margin-right:0px
 
 }
+.activity-gallery{
+    position: relative;
+}
+.activity-gallery .activity-gallery-icons{
+    position: absolute;
+    right: 9%;
+    top: 10%;
+}
+.activity-gallery .activity-gallery-icons span{
+   background-color: black;
+   padding: 10px;
+   color: var(--main-color);
+   cursor: pointer;
+}

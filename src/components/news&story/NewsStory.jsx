@@ -1,14 +1,41 @@
-import React from 'react'
-import {Row, Col, Button } from 'react-bootstrap'
+import React, {useState} from 'react'
+import {Row, Col } from 'react-bootstrap'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG, FaRegCalendarAlt } from 'react-icons/fa'
 import News from '../../assets/news.jpg'
 import User from '../../assets/user.jpg'
+import {AiOutlineCamera, AiOutlineVideoCamera} from 'react-icons/ai'
+import Gallery from '../Gallery'
+import image1 from '../../assets/about bg.jpg'
+import image2 from '../../assets/activity.jpg'
+import image3 from '../../assets/activitybg.jpg'
+import image4 from '../../assets/causes.jpg'
+import image5 from '../../assets/causesbg.jpg'
+import image6 from '../../assets/page-banner.jpg'
+import Video from '../../assets/video.mp4'
+
+const images2 = [
+  image1, 
+  image2, 
+  image3, 
+  image4, 
+  image5, 
+  image6, 
+  Video
+]
 
 const NewsStory = () => {
+
+    const  [isOpen, setIsOpen  ]= useState(false);
+    const  [photoIndex, setPhotoIndex  ]= useState(0);
     return(
         <div className="story">
+            <Gallery images={images2} isOpen={isOpen} setIsOpen={setIsOpen} setPhotoIndex={setPhotoIndex} photoIndex={photoIndex}/>
             <Row>
-                <Col xs='12' >
+                <Col xs='12'className="gallery" >
+                    <div className="gallery-icons">
+                        <span onClick={() => setIsOpen(true)}> <AiOutlineCamera size={25}/> </span>
+                        <span> <AiOutlineVideoCamera size={25}/> </span>
+                    </div>
                     <img  className="image" src={News} alt="" width="100%" height={400} />
                     <div className="userby">
                         <img src={User} height={55} width={55} alt="" />

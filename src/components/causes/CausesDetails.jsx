@@ -1,6 +1,9 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { Row, Col, Container, ProgressBar} from 'react-bootstrap'
 import CauseSlider from './CauseSlider'
+import Gallery from '../Gallery'
+import Mic from '../../assets/micro.jpg'
+import {AiOutlineCamera, AiOutlineVideoCamera} from 'react-icons/ai'
 import { FiFacebook , FiInstagram , FiTwitter} from "react-icons/fi";
 import {  FaLinkedinIn , FaBookReader} from "react-icons/fa";
 import {MdGroups} from 'react-icons/md'
@@ -8,17 +11,32 @@ import {BsNewspaper} from 'react-icons/bs'
 import {ImLocation2} from 'react-icons/im'
 import FeatureSlider from './FeatureSlider'
 
-
+const causes = [
+   Mic, 
+   Mic, 
+   Mic, 
+   Mic, 
+   Mic, 
+   Mic, 
+  ]
 
 const CausesDetails = () => {
+    const  [isOpen, setIsOpen  ]= useState(false);
+    const  [photoIndex, setPhotoIndex  ]= useState(0);
     return(
         <div className="causes-details">
             <Container>
+                <Gallery images={causes} isOpen={isOpen} setIsOpen={setIsOpen} setPhotoIndex={setPhotoIndex} photoIndex={photoIndex}/>
+
                 <Row>
-                    <Col sm='12' md="8">
+                    <Col sm='12' md="8" lg="8" className="causes-gallery">
+                        <div className="causes-gallery-icons">
+                            <span onClick={() => setIsOpen(true)}> <AiOutlineCamera size={25}/> </span>
+                            <span> <AiOutlineVideoCamera size={25}/> </span>
+                        </div>
                         <Row className="justify-content-center">
-                            <Col xs='12' md='6' className="image-slider">
-                               <CauseSlider/>
+                            <Col xs='12' md='10' className="image-slider">
+                              <img  className="image" src={Mic} alt="" width="100%" height={600} />
                             </Col>
                             <div className="content">
                                 <h4>Education for Underprivillage Children</h4>
@@ -27,7 +45,7 @@ const CausesDetails = () => {
                             </div>
                         </Row>
                     </Col> 
-                    <Col sm='12' md="4">
+                    <Col sm='12' md="4" lg="4"> 
                         <div className="details">
                             <h5 className=''>Next Project</h5>
                             <Row className="each-detail">
