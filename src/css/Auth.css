@@ -106,7 +106,7 @@
 
 .contact-us-wrapper .contact-us-fields {
     background-color: white;
-    border: solid 1px rgba(128, 128, 128, 0.377);
+    border: solid 1px transparent;
     padding:  2rem 10px;
     width: 100%;
     box-shadow: 2px 7px 15px 15px rgba(75, 175, 203, 0.24)
