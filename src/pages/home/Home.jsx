@@ -5,18 +5,24 @@ import Unicare from '../../components/home/Unicare';
 import UnicareCards from '../../components/home/UnicareCards';
 import SupportUs from '../../components/home/SupportUs';
 import Footer from '../../components/Footer'
+import CauseSlider from '../../components/causes/CauseSlider';
+import ActivitySlider from '../../components/activities/ActivitySlider';
+import NewsSlider from '../../components/news&story/NewsSlider'
 import '../../css/Home.css'
 
 
-const Home = () =>{
-    return(
+const Home = () => {
+    return (
         <>
-        <Navbar/>
-        <Banner/>
-        <Unicare/>
-        <UnicareCards/>
-        <SupportUs/>
-        <Footer/>
+            <Navbar />
+            <Banner />
+            <NewsSlider />
+            <CauseSlider />
+            <Unicare />
+            <ActivitySlider />
+            <UnicareCards />
+            <SupportUs />
+            <Footer />
         </>
     )
 }

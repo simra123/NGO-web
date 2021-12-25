@@ -62,7 +62,7 @@ const CauseDetails = () => {
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum rerum laudantium! Repudiandae deleniti inventore accusantium delectus tempora totam aspernatur animi sunt neque pariatur, perferendis ipsam dolorem natus repellendus blanditiis! Iure rerum sunt sint ut deserunt, rem illo magnam in facilis nisi eius, officia repellat blanditiis?</p>
 
                                     <Link to="/causes/details"><Button size="md">Donate Now</Button></Link>
-                                    <span className="float-end social-icons">
+                                    {/* <span className="float-end social-icons">
                                         help us by share
                                         <div className="d-flex">
                                             <span ><FiFacebook size={ 15 } />  </span>
@@ -70,7 +70,7 @@ const CauseDetails = () => {
                                             <span ><FiTwitter size={ 15 } />  </span>
                                             <span ><FaLinkedinIn size={ 15 } />  </span>
                                         </div>
-                                    </span>
+                                    </span> */}
                                 </Col>
 
                             </Row>

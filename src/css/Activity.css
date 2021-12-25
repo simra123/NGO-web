@@ -126,7 +126,6 @@
     margin: 20px 30px;
 }
 .activity-details .image{
-    margin-left: 1rem;
     background-color: white;
     padding: 50px;
 }
@@ -149,6 +148,9 @@
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 5px;
+}
+.activity-details .content{
+    margin-top: 40px;
 }
 .activity-details h5{
    margin: 10px 0px;
@@ -191,14 +193,84 @@
 .activity-gallery{
     position: relative;
 }
+.activity-gallery h6{
+    text-transform: uppercase;
+}
 .activity-gallery .activity-gallery-icons{
     position: absolute;
     right: 9%;
-    top: 10%;
+    top: 5%;
 }
 .activity-gallery .activity-gallery-icons span{
-   background-color: black;
    padding: 10px;
    color: var(--main-color);
+   cursor: pointer;
+}
+.activity-slider {
+    margin: 4rem 0px;
+}
+.activity-slider h6{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.activity-slider h1{
+    font-weight: 700;
+    color: var(--main-color);
+}
+.activity-slider .slick-prev:before{
+    color: var(--main-color) !important;
+    font-size: 25px;
+
+}
+ .activity-slider .slick-next:before{
+    color: var(--main-color) !important;
+    font-size: 25px;
+}
+.activity-slider .each-activity{
+    padding: 10px;
+    margin: 30px 0px;
+    position: relative;
+}
+.activity-slider .each-activity img{
+    border-radius: 10px 70px 0px 0px;
+}
+.activity-slider .each-activity .content{
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.activity-slider .each-activity .content h5{
+    font-weight: 700;
+}
+.activity-slider .each-activity .content .userby{
+    margin: 10px 0px;
+    color: var(--main-color);
+}
+.activity-slider .each-activity .content .userby svg{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.activity-slider .each-activity .content p{
+    color: #0009;
+}
+.activity-slider .each-activity .content button{
+    border-radius: 50px;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    font-size: 15px;
+}
+.activity-slider .each-activity .content b{
+    color: var(--main-color);
+
+}
+.activity-slider .each-activity .activity-gallery-icons{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.activity-slider .each-activity .activity-gallery-icons svg{
+   color: var(--main-color) !important;
    cursor: pointer;
 }
