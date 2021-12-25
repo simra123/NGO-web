@@ -50,7 +50,7 @@ const SponserCards = () => {
                                         </Col>
                                         <Col md="7" className="content">
                                             <h5>Sponser A Child</h5>
-                                            <small>Raised: 73948$ <span className="mx-4 org"> Goal: 7827888246$</span> </small>
+                                            <small>Raised: 73948$ <span className="mx-4 org"> Goal: 7246$</span> </small>
                                             <p className='org mt-3'> sit amet consectetur adipisicing elit. Ab quasi fuga quod.</p>
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum rerum laudantium! </p>
 
