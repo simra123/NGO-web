@@ -1,8 +1,10 @@
 .user-tabs{
     margin: 3rem;
-    background-color: rgba(190, 185, 185, 0.562);
+    background-color: rgba(255, 255, 255, 0.979);
     padding: 19px 2rem;
     border-radius: 4px;
+    border: 1px solid lavender;
+    box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.199);
 }
 
 .user-tabs .sidebar .user-details {
@@ -50,11 +52,20 @@
     margin-right: 1px;
     border-radius: 6px;
     padding: 0;
-    border: 1px solid rgba(39, 37, 37, 0.068);
+    border: 1px solid rgba(235, 223, 223, 0.726);
 }
 .user-tabs  .tab-content .each-chart .heading{
     padding: 10px;
 }
 .user-tabs  .tab-content .each-chart .heading p{
     margin: 0;
+}
+.donation-table h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+
+}
+.donation-table img{
+    margin-right: 20px;
 }
