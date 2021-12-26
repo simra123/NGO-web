@@ -2,35 +2,53 @@ import React from 'react'
 import {Row, Col, Container, Button} from 'react-bootstrap'
 import BasicImage from '../../assets/activity.jpg'
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import { publicRequest } from '../../requestMethod'
 
-const activities = [
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    },
-    {
-        img: '', date: '', text: ''
-    }
-]
+// const activities = [
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     },
+//     {
+//         img: '', date: '', text: ''
+//     }
+// ]
 
 const ActivityCard = () => {
+    const [activities, setActivity] = useState([]);
+
+    useEffect(()=>{
+    const getActivity = async () =>{
+        try {
+       const res = await publicRequest.get('frontend/activity');
+       console.log(res);
+       setActivity(res.data.data);
+        }
+        catch(err){
+            console.log(err);
+        }
+    };
+    getActivity();
+    },[])
     return(
         <div className='activities'>
             <Container>
@@ -40,10 +58,10 @@ const ActivityCard = () => {
                            return(
                             <Col xs="12" md="4" className="each-activity">
                                 <img src={BasicImage} alt=""  height='200' width='100%' />
-                                <h6 className='date'>25 Octobar 2018</h6>
+                                <h6 className='date'>{activity.date}</h6>
                                 <div className="detail">
-                                    <h6>Medical Camp for poor Children</h6>
-                                    <small>town hall, california. 10am</small>
+                                    <h6>{activity.activityName}</h6>
+                                    <small>{activity.venue}</small>
                                 </div>
                                 <div className="read-more">
                                     <Link to="/activity/details"><Button size='md'>read more</Button></Link>

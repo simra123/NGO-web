@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { publicRequest } from '../../requestMethod';
-import axios from 'axios';
+
 
 // const causes = [
 //     {
@@ -24,14 +24,13 @@ import axios from 'axios';
 // ]
 
 const CauseDetails = () => {
-    const [causes, setCauses] = useState([{}]);
+    const [causes, setCauses] = useState([]);
 
     useEffect(() => {
         const getCause = async () => {
             try {
-                const res = await axios.get('frontend/cause');
-                console.log(res);
-                setCauses(res)
+                const res = await publicRequest.get('frontend/cause');
+                setCauses(res.data.data)
             }
             catch (err) {
                 console.log(err);
@@ -44,12 +43,11 @@ const CauseDetails = () => {
         <Container>
             <div className="causes">
 
-                {
-                    causes.map((item) => {
+                { causes.map((item) => {
                         return (
                             <Row className="each-cause">
                                 <Col xs="12" md="5" className="image p-0 ">
-                                    {/* <img src={Causes} width="100%" height="100%"  alt="" /> */ }
+                                    <img src={`http://localhost:5000/uploads/cause/${item.image}`} width="100%" height="100%"  alt="" /> 
                                     <div className="range w-100">
                                         <input type="range" min="1" max="100" className="form-range" id="myRange" />
                                     </div>
@@ -57,20 +55,14 @@ const CauseDetails = () => {
                                 </Col>
                                 <Col md="7" className="content">
                                     <h3>{ item.causeName }</h3>
-                                    <small>Raised: 73948$ <span className="mx-4 org"> Goal: 7827888246$</span> </small>
-                                    <p className='org mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quasi fuga quod.</p>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum rerum laudantium! Repudiandae deleniti inventore accusantium delectus tempora totam aspernatur animi sunt neque pariatur, perferendis ipsam dolorem natus repellendus blanditiis! Iure rerum sunt sint ut deserunt, rem illo magnam in facilis nisi eius, officia repellat blanditiis?</p>
+                                    <small className='org'>Raised: {item.fundRaise} <span className="mx-4 org"> Goal: {item.requiredFund}</span> </small>
+                                    <p>{item.description}</p>
 
                                     <Link to="/causes/details"><Button size="md">Donate Now</Button></Link>
-                                    {/* <span className="float-end social-icons">
+                                    <span className="float-end social-icons">
                                         help us by share
-                                        <div className="d-flex">
-                                            <span ><FiFacebook size={ 15 } />  </span>
-                                            <span ><FiInstagram size={ 15 } />  </span>
-                                            <span ><FiTwitter size={ 15 } />  </span>
-                                            <span ><FaLinkedinIn size={ 15 } />  </span>
-                                        </div>
-                                    </span> */}
+                                        
+                                    </span> 
                                 </Col>
 
                             </Row>
