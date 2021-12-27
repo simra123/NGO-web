@@ -4,32 +4,26 @@ import Sponser from '../../assets/causes.jpg';
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from 'react-router-dom'
-
-
-const sponser = [
-    {
-        img: "",
-        heading: '',
-        para: ''
-    },
-    {
-        img: "",
-        heading: '',
-        para: ''
-    },
-    {
-        img: "",
-        heading: '',
-        para: ''
-    },
-    {
-        img: "",
-        heading: '',
-        para: ''
-    }
-]
+import { useState } from 'react';
+import { useEffect } from 'react';
+import  publicRequest  from '../../requestMethod';
+import baseURL from '../common/BaseUrl'
 
 const SponserCards = () => {
+    const [sponsorChild, setSponsorChild] = useState([]);
+
+    useEffect(() => {
+        const getChild = async () => {
+            try {
+                const res = await publicRequest.get('frontend/sponsor');
+                setSponsorChild(res.data.data)
+            }
+            catch (err) {
+                console.log(err);
+            }
+        };
+        getChild();
+    }, []);
 
     return (
         <Container>
@@ -37,22 +31,22 @@ const SponserCards = () => {
                 <h2 className='text-center'>SPONSER A CHILD</h2>
                 <Row >
                     {
-                        sponser.map((item) => {
+                        sponsorChild.map((child) => {
                             return (
                                 <Col md='6' >
                                     <Row className="each-sponser">
                                         <Col xs="12" md="5" className="image  ">
-                                            <img src={ Sponser } width="100%" height="100%" alt="" />
+                                            <img src={ baseURL+"uploads/sponsor/"+child.childImage } width="100%" height="100%" alt="" />
                                             {/* <div className="range w-100">
                                                 <input type="range" min="1" max="100" className="form-range" id="myRange" />
                                             </div> */}
 
                                         </Col>
                                         <Col md="7" className="content">
-                                            <h5>Sponser A Child</h5>
-                                            <small>Raised: 73948$ <span className="mx-4 org"> Goal: 7246$</span> </small>
-                                            <p className='org mt-3'> sit amet consectetur adipisicing elit. Ab quasi fuga quod.</p>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dolorum rerum laudantium! </p>
+                                            <h5>{child.childName}</h5>
+                                            <small>{child.childAge}<span className="mx-4 org">{child.childGender}</span> </small>
+                                            <p className='org mt-3'>{child.childCountry}</p>
+                                            <p>{child.childIntro}</p>
 
                                             <Link to="/sponser/details"><Button size="md">Sponser a Child</Button></Link>
                                             {/* <span className="float-end social-icons">

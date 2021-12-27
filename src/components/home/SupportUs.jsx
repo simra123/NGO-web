@@ -34,7 +34,7 @@ const SupportUs = () =>{
                         <Row className='content'>
                            
                             <Col xs="12" md="6" className="each-content">
-                                <h6> <span> <BsGraphUp size={25}/> </span> {secondSection.headin1}</h6>
+                                <h6> <span> <BsGraphUp size={25}/> </span> {secondSection.heading1}</h6>
                                 <p>{secondSection.text1}</p>
                             </Col>
                             <Col xs="12" md="6" className="each-content">
