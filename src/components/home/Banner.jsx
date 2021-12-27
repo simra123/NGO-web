@@ -49,8 +49,10 @@ const Banner = () =>{
         },[]);
 return (
         <Carousel  fade className="slider-banner" indicators={true} interval={2000} >
-            {banner.map((item , index)=>{
+            {
+            banner.map((item , index)=>{
                     return(
+                        item.pageType == 'home' ?
                         <Carousel.Item key={index}>
                             <img src={baseURL+"uploads/banner/"+item.sliderImage} alt="First Slide" className="first-slide"  width="100%" height="590"  />
                             <Carousel.Caption>
@@ -66,7 +68,9 @@ return (
 
                             </Carousel.Caption>
                         </Carousel.Item>
+                        : <div></div>
                     )
+                    
                 })
             }
 

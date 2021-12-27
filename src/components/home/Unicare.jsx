@@ -10,29 +10,20 @@ import { useEffect } from 'react';
 import publicRequest from '../../requestMethod';
 
 const Unicare = () => {
-const [aboutdata, setAboutData] = React.useState([]);
+const [aboutdata, setAboutData] = useState([]);
 
     useEffect(()=>{
     const getAbout = async () =>{
         try {
        const res = await publicRequest.get('frontend/about');
-       const data = res.data.data;
-        setAboutData([{
-            aboutText: data.aboutText,
-            number1: data.number1,
-            number2:  data.number2,
-            image:  data.image
-    
-        }]);
+        setAboutData(res.data.data);
         }catch(err){
             console.log(err);
         }
     };
     getAbout();
-    console.log(aboutdata)
-},[]);
-
-   return(
+    },[]);
+return(
     <Container>
         <div className="unicare">
                 <Row>
@@ -43,7 +34,7 @@ const [aboutdata, setAboutData] = React.useState([]);
                                 <div className="d-flex">
                                     <MdPeopleAlt size={40}/>
                                     <span>
-                                        <h3></h3>
+                                        <h3>{aboutdata.number1}</h3>
                                         <p>Volunteer</p>
                                     </span>
 
@@ -53,7 +44,7 @@ const [aboutdata, setAboutData] = React.useState([]);
                                     <FaPiggyBank size={40}/>
                                     
                                     <span>
-                                        <h3></h3>
+                                        <h3>{aboutdata.number2}</h3>
                                         <p>Trusted Funds</p>
                                     </span>
 
@@ -67,7 +58,7 @@ const [aboutdata, setAboutData] = React.useState([]);
                         </Row>
                     </Col>
                     <Col xs="12" md="6">
-                        <img src="" alt=""  height="500" width="500"/>
+                        <img src={baseURL+"uploads/about/"+aboutdata.image} alt=""  height="500" width="500"/>
                     </Col>
                 </Row>
         </div>
