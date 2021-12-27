@@ -8,7 +8,7 @@ import Image4 from '../../assets/causes.jpg';
 import Image5 from '../../assets/page-banner.jpg';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { publicRequest } from '../../requestMethod';
+import  publicRequest  from '../../requestMethod';
 const UnicareCards = () => {
     const [section, setSection] = useState([]);
 

@@ -7,22 +7,29 @@ import UnicareCards from './UnicareCards';
 import baseURL from '../common/BaseUrl';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { publicRequest } from '../../requestMethod';
+import publicRequest from '../../requestMethod';
 
 const Unicare = () => {
-const [aboutdata, setAboutData] = useState([]);
+const [aboutdata, setAboutData] = React.useState([]);
 
     useEffect(()=>{
     const getAbout = async () =>{
         try {
        const res = await publicRequest.get('frontend/about');
-        setAboutData([res.data.data]);
+       const data = res.data.data;
+        setAboutData([{
+            aboutText: data.aboutText,
+            number1: data.number1,
+            number2:  data.number2,
+            image:  data.image
+    
+        }]);
         }catch(err){
             console.log(err);
         }
     };
     getAbout();
-    
+    console.log(aboutdata)
 },[]);
 
    return(
@@ -30,7 +37,7 @@ const [aboutdata, setAboutData] = useState([]);
         <div className="unicare">
                 <Row>
                     <Col xs="12" md="6" className="content">
-                        <p></p>
+                        <p>{aboutdata.aboutText}</p>
                         <Row>
                             <Col xs="5" className="counts">
                                 <div className="d-flex">

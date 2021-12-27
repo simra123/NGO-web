@@ -4,7 +4,7 @@ import BasicImage from '../../assets/activity.jpg';
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { publicRequest } from '../../requestMethod';
+import  publicRequest  from '../../requestMethod';
 import baseURL from '../common/BaseUrl';
 // const activities = [
 //     {
