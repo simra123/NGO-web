@@ -1,11 +1,11 @@
-import React from 'react'
-import {Row, Col, Container, Button} from 'react-bootstrap'
-import BasicImage from '../../assets/activity.jpg'
-import {Link} from 'react-router-dom'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { publicRequest } from '../../requestMethod'
-
+import React from 'react';
+import {Row, Col, Container, Button} from 'react-bootstrap';
+import BasicImage from '../../assets/activity.jpg';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { publicRequest } from '../../requestMethod';
+import baseURL from '../common/BaseUrl';
 // const activities = [
 //     {
 //         img: '', date: '', text: ''
@@ -57,7 +57,7 @@ const ActivityCard = () => {
                        activities.map((activity)=>{
                            return(
                             <Col xs="12" md="4" className="each-activity">
-                                <img src={BasicImage} alt=""  height='200' width='100%' />
+                                <img src={baseURL+activity.activityImageDetails[0].image} alt=""  height='200' width='100%' />
                                 <h6 className='date'>{activity.date}</h6>
                                 <div className="detail">
                                     <h6>{activity.activityName}</h6>

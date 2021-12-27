@@ -16,12 +16,12 @@ const Home = () => {
         <>
             <Navbar />
             <Banner />
-            <NewsSlider />
-            <CauseSlider />
             <Unicare />
-            <ActivitySlider />
             <UnicareCards />
             <SupportUs />
+            <CauseSlider />
+            <ActivitySlider />
+            <NewsSlider />
             <Footer />
         </>
     )

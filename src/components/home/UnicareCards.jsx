@@ -6,15 +6,34 @@ import Image2 from '../../assets/activity.jpg';
 import Image3 from '../../assets/about bg.jpg';
 import Image4 from '../../assets/causes.jpg';
 import Image5 from '../../assets/page-banner.jpg';
-
-
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { publicRequest } from '../../requestMethod';
 const UnicareCards = () => {
+    const [section, setSection] = useState([]);
+
+    useEffect(()=>{
+    const getSection = async () =>{
+        try {
+       const res = await publicRequest.get('frontend/thirdsection');
+    //    console.log(res);
+       setSection(res.data.data);
+    //    console.log(section);
+        }
+        catch(err){
+            console.log(err);
+        }
+    };
+    getSection();
+    },[])
+   
+
     return(
         <div className="unicard mb-5">
             <Row>
                 <Col lg="3" md="3" xs="12" className="each-card p-0 m-0">
                     <div className="content bg-danger ">
-                        <h3>Become a Volunteer</h3>
+                        <h3>{section.heading1}</h3>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde magnam repellat earum amet, distinctio totam deserunt quis explicabo fugit tenetur, recusandae suscipit corrupti cupiditate eligendi.  </p>
                         <span className="border text-danger border-danger">
                             <MdPeopleAlt size={40}/>

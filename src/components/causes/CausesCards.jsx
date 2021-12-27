@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { publicRequest } from '../../requestMethod';
-
+import baseURL from '../common/BaseUrl'
 
 // const causes = [
 //     {
@@ -47,7 +47,7 @@ const CauseDetails = () => {
                         return (
                             <Row className="each-cause">
                                 <Col xs="12" md="5" className="image p-0 ">
-                                    <img src={`http://localhost:5000/uploads/cause/${item.image}`} width="100%" height="100%"  alt="" /> 
+                                    <img src={baseURL+item.causeImageDetails[0].image} width="100%" height="100%"  alt="" /> 
                                     <div className="range w-100">
                                         <input type="range" min="1" max="100" className="form-range" id="myRange" />
                                     </div>
