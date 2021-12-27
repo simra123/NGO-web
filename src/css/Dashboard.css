@@ -38,6 +38,7 @@
 .user-tabs .sidebar .tabs-links .nav-link {
    color: #0009;
    padding: 13px 10px;
+   cursor: pointer;
 }
 
 .user-tabs .sidebar .tabs-links .nav-link svg{
@@ -68,4 +69,72 @@
 }
 .donation-table img{
     margin-right: 20px;
+}
+.forms .steps-bar{
+    margin: 30px 0px;
+    
+}
+.forms .steps-bar span{
+    color: white;
+    background-color: var(--main-color);
+    padding: 3px 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.forms .steps-bar .bar{
+    width: 100%;
+    height: 7px;
+    margin-right: 10px;
+    background-color: rgba(128, 128, 128, 0.438);
+    border-radius: 50px;
+}
+.forms .steps-bar .on{
+    background-color: var(--main-color);
+}
+.forms h5{
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: 700;
+    text-align: left !important;
+    margin-top: 10px;
+}
+.forms .card{
+    border: none;
+}
+.forms label{
+    color: #0009;
+    margin-left: 10px;
+}
+.forms .card-body{
+   border-radius: 10px;
+   box-shadow: 1px 2px 19px 1px #0009 ;
+   border: none;
+   padding: 30px;
+   margin-bottom: 20px;
+
+}
+.forms .card-body button{
+    width: 40%;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.thankyou-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.thankyou-page h1{
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 60px;
+}
+.thankyou-page button{
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
 }

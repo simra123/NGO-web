@@ -4,8 +4,10 @@ import Customer from '../../assets/user.jpg'
 import { AiOutlineHome, AiOutlineFileProtect, AiOutlineHistory, AiOutlineHeart } from 'react-icons/ai'
 import { BiSkipPreviousCircle } from 'react-icons/bi'
 import { BsArrowRepeat } from 'react-icons/bs'
-import DonationHistory from './DonationHistory'
 import ProductsChart from './ProductsChart'
+import DonationHistory from './DonationHistory'
+import DonationForm from './DonationForm'
+import ProfileSettings from './ProfileSettings'
 
 const userTabs = () => {
   return (
@@ -66,10 +68,13 @@ const userTabs = () => {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="second">
-                ifjweoifiweopf
+                <DonationForm />
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <DonationHistory />
+              </Tab.Pane>
+              <Tab.Pane eventKey="fourth">
+                <ProfileSettings />
               </Tab.Pane>
             </Tab.Content>
           </Col>
