@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: 0;
+  padding: 0;
+  margin : 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: poppins;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div {
+  height: 100vh;
+  width: 100%;
+  background-color:rgba(231, 8, 8, 0.486) ;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+
+} 
+.main-div .alerts{
+  position: absolute;
+  top: 0;
+}
+.center-div {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 7px 5px 24px rgba(0, 0, 0, 0.493);
+  width: 25%;
+  height: 80vh;
+  border-radius: 10px;
+  overflow-y: scroll;
+  
+    
+}
+.center-div h1 {
+  background-color: rgba(231, 8, 8, 0.486);
+  margin: 20px  0px;
+}
+.center-div input{
+  border: 0 !important;
+  border-bottom: 3px solid rgba(231, 8, 8, 0.486) !important;
+  background-color: transparent;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.center-div input:focus {
+outline: none;
+}
+.center-div i {
+  margin: 0px 10px;
+  color:rgba(231, 8, 8, 0.486);
+  font-size: 32px;
+  
+}
+.center-div i:hover {
+  color: rgba(231, 8, 8, 0.486);
 }
 
-.App-link {
-  color: #61dafb;
+.center-div p{
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  text-align: center;
+  margin-left: 10px;
+}
+.center-div .completed{
+  margin: 20px 0px 0px 0px;
+}
+.center-div .completed input {
+  margin-right: 10px;
+  font-size: 30px;
+  padding: 20px;
+  width: auto;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 18px;
+}
+.todocomp {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2px 10px;
+}
+.todocomp .actions{
+  margin-left: auto;
+  padding-bottom: 10px;
+}
+.todocomp i {
+  font-size: 20px;
+  margin: 3px 8px;
+  color:rgba(231, 8, 8, 0.486)
+}
+.todocomp i:hover{
+  color: red;
+}
+.todocomp  svg{
+  margin-right :10px
+}
+.all-tasks button {
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width:900px) {
+  .center-div{
+    width:40% !important
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 500px) {
+  .center-div{
+    width:90% !important
   }
 }
+
