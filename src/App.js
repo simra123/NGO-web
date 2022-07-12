@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import './css/Responsive.css'
+import TodoList from './pages'
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/home/Home'
 import AboutUS from './pages/about/AboutUS';
@@ -25,7 +26,7 @@ function App() {
       <HashRouter basename="/">
 
         <Switch>
-          <Route exact path="/" component={ Home } />
+          <Route exact path="/" component={ TodoList } />
           <Route exact path="/about" component={ AboutUS } />
           <Route exact path="/news" component={ News } />
           <Route exact path="/news/details" component={ NewsStory } />
