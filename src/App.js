@@ -4,8 +4,8 @@ import './css/Responsive.css'
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/home/Home'
 import AboutUS from './pages/about/AboutUS';
-import News from './pages/news/News';
-import NewsStory from './pages/news/NewsDetails';
+import News from './pages/News/News';
+import NewsStory from './pages/News/NewsDetails';
 import Causes from './pages/causes/Causes';
 import CausesDetails from './pages/causes/CausesDetails';
 import Activity from './pages/activities/Activity';
